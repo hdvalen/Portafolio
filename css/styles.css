@@ -7,7 +7,7 @@
 /* Menu */
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 1rem;
     background-color: #1e1d2b;
@@ -29,7 +29,6 @@ nav {
   
   ul.nav-links {
     display: flex;
-    margin-left: 350px;
   }
   
   nav.active ul.nav-links {
@@ -60,7 +59,7 @@ nav {
   li.nav-link a {
     text-decoration: none;
     color: inherit;
-    font-size:medium;
+    font-size:large;
     text-transform: uppercase;
   }
   
@@ -76,7 +75,7 @@ nav {
 
 /*home*/
 .home{
-    height: 700px;
+    height: 650px;
 }
 .container{
     position: relative;
@@ -95,7 +94,7 @@ nav {
 /* about */
 
 .about{
-    height: 700px;    
+    height: 650px;    
 }
 .container2{
     position: relative;
@@ -104,7 +103,6 @@ nav {
     width: 50%;
     padding: 10px;
     text-align: justify;
-
     border: 1px solid #b6a4df;
 }
 .tittle{
@@ -115,4 +113,38 @@ nav {
 .parrafo2{
     color: white;
     font-size: 150%;
+}
+
+
+/* Skills */
+
+.skills{
+    height: 650px; 
+}
+.tittle2{
+    color: white;
+    font-size: 250%;
+    margin-left: 600px;
+}
+
+/* Projects */
+
+.projects{
+    height: 650px; 
+}
+.tittle3{
+    color: white;
+    font-size: 250%;
+    margin-left: 600px;
+}
+
+/* Contact */
+
+.contact{
+    height: 650px; 
+}
+.tittle4{
+    color: white;
+    font-size: 250%;
+    margin-left: 600px;
 }
