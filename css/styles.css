@@ -1,18 +1,23 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #1e1d2b;
 }
-
+body{
+  background-color: #000000;
+}
 /* Menu */
 nav {
+    
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background-color: #1e1d2b;
+    background-color: #000000;
     color: white;
-    position: relative;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000;
   }
   
   nav.active {
@@ -29,6 +34,8 @@ nav {
   
   ul.nav-links {
     display: flex;
+    position: fixed;
+    z-index: 1000;
   }
   
   nav.active ul.nav-links {
@@ -76,8 +83,10 @@ nav {
 /*home*/
 .home{
     height: 650px;
+    background-color: black;
 }
 .container{
+    background-color: transparent;
     position: relative;
     top: 210px;
     left: 250px;
@@ -91,10 +100,12 @@ nav {
 .name{
     font-size: 350%;
 }
+
 /* about */
 
 .about{
-    height: 650px;    
+    height: 650px;
+    background-color: #000000;    
 }
 .container2{
     position: relative;
@@ -109,10 +120,43 @@ nav {
     color: white;
     font-size: 250%;
     margin-left: 600px;
+    margin-top: 50px;
 }
 .parrafo2{
     color: white;
     font-size: 150%;
+}
+.foto{
+  position: relative;
+  bottom: 70px;
+  left: 1000px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+/* Logos */
+.containerImg{
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  bottom: 70px;
+  margin-left: 5px;
+  width: 900px;
+  
+}
+.LogoJava{
+  width: 10.5%;
+}
+
+.LogoHtml{
+  width: 5.5%;
+}
+.LogoCss{
+  width: 10%;
+}
+.LogoPython{
+  width: 5%;
 }
 
 
@@ -120,6 +164,7 @@ nav {
 
 .skills{
     height: 650px; 
+    background-color: #000000;
 }
 .tittle2{
     color: white;
@@ -131,6 +176,7 @@ nav {
 
 .projects{
     height: 650px; 
+    background-color: #000000;
 }
 .tittle3{
     color: white;
@@ -142,6 +188,7 @@ nav {
 
 .contact{
     height: 650px; 
+    background-color: #000000;
 }
 .tittle4{
     color: white;
