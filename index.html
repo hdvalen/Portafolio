@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/app.js"></script>
     <title>portafolio</title>
 </head>
 <body>
     <nav>
-        <div class="bars">
-            <i class="fa fa-bars"></i>
-        </div>
         <ul class="nav-links">
             <li class="nav-link"><a href="#about">Sobre mi</a></li>
+            <li class="nav-link"><a href="#skills">Habilidades</a></li>
             <li class="nav-link "><a href="#projects">Proyectos</a></li>
             <li class="nav-link "><a href="#contact">Contacto</a></li>
         </ul>
@@ -27,38 +26,106 @@
             Mi enfoque principal es crear sitios web funcionales y estéticamente agradables, mientras sigo desarrollando mis habilidades en frameworks modernos y buenas prácticas de desarrollo.</p>
         </div>       
     </section>
+    <section id="skills" class="skills">
+        <div class="habilidades">
+            <!-- Botón central -->
+            <button class="button" onclick="toggleArms()">Click</button>
+    
+            <!-- Brazos desplegables -->
+            <div class="arms">
+                <div class="arm">HTML</div>
+                <div class="arm">CSS</div>
+                <div class="arm">JavaScript</div>
+                <div class="arm">React</div>
+                <div class="arm">Node.js</div>
+            </div>
+        </div>
+    </section>
     <section id="projects" class="projects">
         <h1 class="tittle3">Proyectos</h1>
         <div class="contenedores">
         <div class="container">
-            <h2>Título 1</h2>
-            <p>Descripción breve sobre el contenido de este contenedor. Aquí puedes incluir detalles importantes.</p>
+            <h2>Hamburguesas</h2>
+            <p>Este proyecto es una pagina web creada en HTML y CSS en donde puse en practica mis conocimientos en estos lenguajes, permite explorar diferentes servicios y precios.</p>
+            <br>    <br> <br><br>
             <div class="botones">
-                <button class="btn">Botón 1</button>
-                <button class="btn btn-secundario">Botón 2</button>
+               <a href="https://pagina-hamburguesa.netlify.app/"> <button class="btn">Ver</button></a>
+                <a href="https://github.com/hdvalen/Hamburguesas_Pagina"><button class="btn btn-secundario">Ver Github</button></a>
             </div>
         </div>
         <div class="container">
-            <h2>Título 2</h2>
-            <p>Otra descripción breve para este contenedor. Perfecto para explicar algo interesante.</p>
+            <h2>Concierto</h2>
+            <p>Este proyecto es una aplicación de eventos musicales que permite a los usuarios explorar, comprar y gestionar entradas para conciertos y otros eventos musicales. La plataforma tiene como objetivo proporcionar una experiencia de usuario amigable y accesible para facilitar la búsqueda y compra de entradas de manera sencilla.</p>
             <div class="botones">
-                <button class="btn">Botón 1</button>
-                <button class="btn btn-secundario">Botón 2</button>
+                <a href="https://eventmusica.netlify.app/principal"><button class="btn">Ver</button></a>
+                <a href="https://github.com/hdvalen/ProyectoConcierto"><button class="btn btn-secundario">Ver Github</button></a>
             </div>
         </div>
         <div class="container">
-            <h2>Título 3</h2>
-            <p>Un último contenedor con más información breve y atractiva para los usuarios.</p>
+            <h2>Colombia</h2>
+            <p>Este proyecto es una web donde el usuario vera diferentes departamentos de Colombia y al seleccionarlos vera las costumbres y los platos tipicos de este departamento</p>
+            <br> <br><br> <br>
             <div class="botones">
-                <button class="btn">Botón 1</button>
-                <button class="btn btn-secundario">Botón 2</button>
+               <a href="https://mapadecolombia-web.netlify.app/"><button class="btn">Ver</button></a>
+                <a href="https://github.com/hdvalen/departamentosColombia"><button class="btn btn-secundario">Ver Github</button></a>
             </div>
         </div>
     </section>
+    <!-- Contenedor de la seccion Contacto -->
     <section id="contact" class="contact">
-        <h1 class="tittle4">Contacto</h1>
+        <svg class="editorial"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28 "
+        preserveAspectRatio="none">
+    <defs>
+    <path id="gentle-wave"
+    d="M-160 44c30 0 
+        58-18 88-18s
+        58 18 88 18 
+        58-18 88-18 
+        58 18 88 18
+        v44h-352z" />
+    </defs>
+    <g class="parallax1">
+    <use xlink:href="#gentle-wave" x="50" y="3" fill="#425B9E"/>
+    </g>
+        <g class="parallax2">
+    <use xlink:href="#gentle-wave" x="50" y="0" fill="#425B9E"/>
+        </g>
+        <g class="parallax3">
+    <use xlink:href="#gentle-wave" x="50" y="9" fill="#425B9E"/>
+    </g>
+        <g class="parallax4">
+    <use xlink:href="#gentle-wave" x="50" y="6" fill="#425B9E"/>  
+    </g>
+    </svg>
+        <div class="contactContainer1">
+            <div class="iconText">
+                <img src="image/sobre.png" alt="" class="imgIcon"><p style="margin-left: 20px;">Hodethcaballero@gmail.com</p> 
+            </div>
+            <div>
+                <a href="https://github.com/hdvalen">
+                <img src="image/github.png" alt="" class="imgIcon"></a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/valentina-caballero-2535a7291/">
+                <img src="image/linkedin.png" alt="" class="imgIcon"></a>
+            </div>
+            <div class="iconText">
+                <img src="image/circulo-de-telefono.png" alt="" class="imgIcon"><p style="margin-left: 20px;">+57 3160798670</p> 
+            </div>
+            <div>
+                <a href="https://www.instagram.com/valen_caballero16/">
+                <img src="image/instagram.png" alt="" class="imgIcon"></a>
+            </div>
+        </div>
+        <div class="contactContainer2">
+        <h1 class="tittle4">CONTACTO</h1>
+        </div>
     </section>
 </header>
 <script src="js/menu.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
