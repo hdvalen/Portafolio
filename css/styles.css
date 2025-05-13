@@ -7,9 +7,10 @@
     font-family: "Tomorrow", serif;
     font-weight: 400;
     font-style: normal;
+    background-color: #ded9e4;
 }
 body{
-  background-color: #D1D7DA;
+  background-color: #ded9e4;
 }
 /* Menu */
 nav {
@@ -92,20 +93,20 @@ nav {
 /* about */
 
 .about{
-    height: 650px;
-    background-color: #D1D7DA;    
+    height: 700px;
+    background-color: 	#ded9e4;    
 }
 .container2{
     position: relative;
-    left: 350px;
+    left: 200px;
     top: 50px;
-    width: 50%;
+    width: 80%;
     padding: 10px;
     text-align: justify;
 
 }
 .tittle{
-    color: #000000;
+    color: #560461;
     font-size: 250%;
     margin-left: 600px;
     margin-top: 50px;
@@ -114,7 +115,7 @@ nav {
     font-style: normal;
 }
 .parrafo2{
-    color: #000000;
+    color: #050505;
     font-size: 140%;
     font-family: "Tomorrow", serif;
     font-weight: 400;
@@ -132,8 +133,8 @@ nav {
 /*skills*/
 
 .skills{
-  height: 500px;
-  background-color: #D1D7DA;  
+  height: 600px;
+  background-color: #ded9e4;  
 }
 .habilidades {
   position: relative;
@@ -149,6 +150,7 @@ nav {
   font-family: "Tomorrow", serif;
     font-weight: 400;
     font-style: normal;
+    color: #560461;
 }
 .button {
   background-color: #D1D7DA;
@@ -164,237 +166,48 @@ nav {
   transform: scale(1.1);
 }
 
-.arms {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
-}
-
-.arm {
-  position: absolute;
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-
-/* Posiciones de los brazos */
-.arm:nth-child(1) {
-  transform: translate(-50%, -260px);
-}
-
-.arm:nth-child(2) {
-  transform: translate(190px, -70%);
-}
-
-.arm:nth-child(3) {
-  transform: translate(-50%, 100px);
-}
-
-.arm:nth-child(4) {
-  transform: translate(-250px, -60%);
-}
-.Imgskills :hover{
-  transition: scale(1.1);
-}
-.Imgskills{
-  width: 85px;
-}
 
 /* Projects */
 
 .projects{
     height: 650px; 
-    background-color: #D1D7DA ;
+    background-color: #ded9e4 ;
 }
 .tittle3{
-    color: #000000;
+    color: #560461;
     font-size: 250%;
     margin-left: 550px;
     font-family: "Tomorrow", serif;
     font-weight: 400;
     font-style: normal;
 }
-.contenedores {
+.cards{
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 40px;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
-
-.container {
-  background-color: #B4B9BB;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 300px;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.container:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.container h2 {
-  margin: 0 0 10px;
-  font-size: 1.5rem;
-  color: #333;
-}
-
-.container p {
-  font-size: 1rem;
-  margin: 0 0 10px;
-  color: #555;
-  text-align: justify;
-}
-
-.botones {
-  display: flex;
-  justify-content: space-around;  
-}
-
-.btn {
-  background-color: #5b8abd;
-  color: white;
-  border: none;
-  padding: 10px 20px;
+.card{
+  background-color: #fff;
   border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 400px ;
+  height: auto;
+}
+.imagenes{
+  max-width: 100%;
+  height: 48%;
+}
+.card img{
+
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: all 0.3s;
   cursor: pointer;
-  transition: background-color 0.3s;
-  font-size: 1rem;
 }
-
-.btn:hover {
-  background-color: #12589e;
-}
-
-.btn-secundario {
-  background-color: #6c757d;
-}
-
-.btn-secundario:hover {
-  background-color: #495057;
-}
-
-/* Contact */
-.editorial {
-  display: block;
-  width: 100%;
-  height: 60px;
-  max-height: 60px;
-  margin: 0;
-  z-index:5;
-  top: 1810px;
-  position:absolute;
-  left:0px;
-  float:left;
-}
-
-.parallax1 > use {
-  animation: move-forever1 10s linear infinite;
-  &:nth-child(1) {
-    animation-delay: -2s;
-  }
-}
-.parallax2 > use {
-  animation: move-forever2 8s linear infinite;
-  &:nth-child(1) {
-    animation-delay: -2s;
-  }
-}
-.parallax3 > use {
-  animation: move-forever3 6s linear infinite;
-  &:nth-child(1) {
-    animation-delay: -2s;
-  }
-}
-.parallax4 > use {
-  animation: move-forever4 4s linear infinite;
-  &:nth-child(1) {
-    animation-delay: -2s;
-  }
-}
-@keyframes move-forever1 {
-  0% {
-    transform: translate(85px, 0%);
-  }
-  100% {
-    transform: translate(-90px, 0%);
-  }
-}
-@keyframes move-forever2 {
-  0% {
-    transform: translate(-90px, 0%);
-  }
-  100% {
-    transform: translate(85px, 0%);
-  }
-}
-@keyframes move-forever3 {
-  0% {
-    transform: translate(85px, 0%);
-  }
-  100% {
-    transform: translate(-90px, 0%);
-  }
-}
-@keyframes move-forever4 {
-  0% {
-    transform: translate(-90px, 0%);
-  }
-  100% {
-    transform: translate(85px, 0%);
-  }
-}
-
-.contact{
-    height: 650px; 
-    background-color: #425B9E;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.tittle4{
-    color: #000000;
-    font-size: 250%;
-    position: relative;
-    top: 50px;
-    margin-left: 250px;
-    font-family: "Tomorrow", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.contactContainer1{
-  background-color: #425B9E;
-  display: flex;
-  flex-direction:column;
-  width: 586px;
-  justify-content: space-evenly;
-  margin-left: 30px;
-
-}
-.contactContainer2{
-  background-color: #425B9E;
-  width: 690px;
-  padding-left: 20px;
-}
-.imgIcon{
-  width: 35px;
-  margin-left: 50px;
-}
-.imgIcon:hover{
-  transform: translateY(-5px);
-}
-.iconText{
-  display: flex;
-  flex-direction: row;
-}
-
-.fondoContacto{
-  width: 550px;
-  margin-top: 150px;
-  margin-left: 140px;
+.card:hover img{
+  filter: grayscale(0);
+  scale: 1.05;
 }
