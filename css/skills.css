@@ -1,7 +1,7 @@
 :root {
-  --color-text: #666666;
-  --color-bg: #ffffff;
-  --color-bg-accent: #c8a7cc;
+  --color-text: #494949;
+  --color-bg: #ffc7af;
+  --color-bg-accent: #f48B5e;
   --size: clamp(10rem, 1rem + 40vmin, 30rem);
   --gap: calc(var(--size) / 14);
   --duration: 60s;
@@ -11,13 +11,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-text: rgb(213, 219, 255);
-    --color-bg: rgb(57, 57, 109);
-    --color-bg-accent: #2626a0;
+    --color-text: #ffc7af;
+    --color-bg: #ffc7af;
+    --color-bg-accent: #ffc7af;
   }
 }
-
-
 
 .marquee {
   display: flex;
